@@ -1,0 +1,206 @@
+jun 15 16:01:40 symfony [info] {sfPatternRouting} Match route "comoseentero" (/comoseentero.:sf_format) for /comoseentero with parameters array (  'module' => 'comoseentero',  'action' => 'index',  'sf_format' => 'html',)
+jun 15 16:01:41 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jun 15 16:01:41 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+jun 15 16:01:41 symfony [info] {comoseenteroActions} Call "comoseenteroActions->executeIndex()"
+jun 15 16:01:41 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+jun 15 16:01:41 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM comoseentero c - ()
+jun 15 16:01:41 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/indexSuccess.php"
+jun 15 16:01:41 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_assets.php"
+jun 15 16:01:41 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_flashes.php"
+jun 15 16:01:41 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_list_header.php"
+jun 15 16:01:41 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_filters.php"
+jun 15 16:01:41 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_filters_field.php"
+jun 15 16:01:41 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_filters_field.php"
+jun 15 16:01:41 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_list.php"
+jun 15 16:01:41 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_list_batch_actions.php"
+jun 15 16:01:41 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_list_actions.php"
+jun 15 16:01:41 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_list_footer.php"
+jun 15 16:01:41 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\fit2go\apps\backend\templates/layout.php"
+jun 15 16:01:41 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\fit2go\apps\backend\templates/layout.php"
+jun 15 16:01:41 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+jun 15 16:01:41 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+jun 15 16:01:41 symfony [info] {sfWebDebugLogger} Configuration 755.18 ms (13)
+jun 15 16:01:41 symfony [info] {sfWebDebugLogger} Factories 283.32 ms (1)
+jun 15 16:01:41 symfony [info] {sfWebDebugLogger} Action "comoseentero/index" 59.18 ms (1)
+jun 15 16:01:41 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+jun 15 16:01:41 symfony [info] {sfWebDebugLogger} View "Success" for "comoseentero/index" 91.95 ms (1)
+jun 15 16:01:41 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_assets" 1.47 ms (1)
+jun 15 16:01:41 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_flashes" 1.35 ms (1)
+jun 15 16:01:41 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_list_header" 1.03 ms (1)
+jun 15 16:01:41 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_filters" 40.75 ms (1)
+jun 15 16:01:41 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_filters_field" 33.28 ms (2)
+jun 15 16:01:41 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_list" 2.06 ms (1)
+jun 15 16:01:41 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_list_batch_actions" 2.25 ms (1)
+jun 15 16:01:41 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_list_actions" 2.04 ms (1)
+jun 15 16:01:41 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_list_footer" 1.32 ms (1)
+jun 15 16:01:41 symfony [info] {sfWebResponse} Send content (62322 o)
+jun 15 16:07:45 symfony [info] {sfPatternRouting} Match route "comoseentero" (/comoseentero.:sf_format) for /comoseentero with parameters array (  'module' => 'comoseentero',  'action' => 'index',  'sf_format' => 'html',)
+jun 15 16:07:45 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jun 15 16:07:45 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+jun 15 16:07:45 symfony [info] {comoseenteroActions} Call "comoseenteroActions->executeIndex()"
+jun 15 16:07:47 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+jun 15 16:07:47 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM comoseentero c - ()
+jun 15 16:07:47 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/indexSuccess.php"
+jun 15 16:07:47 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_assets.php"
+jun 15 16:07:47 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_flashes.php"
+jun 15 16:07:47 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_list_header.php"
+jun 15 16:07:47 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_filters.php"
+jun 15 16:07:47 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_filters_field.php"
+jun 15 16:07:47 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_filters_field.php"
+jun 15 16:07:47 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_list.php"
+jun 15 16:07:47 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_list_batch_actions.php"
+jun 15 16:07:47 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_list_actions.php"
+jun 15 16:07:47 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_list_footer.php"
+jun 15 16:07:47 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\fit2go\apps\backend\templates/layout.php"
+jun 15 16:07:47 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\fit2go\apps\backend\templates/layout.php"
+jun 15 16:07:47 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+jun 15 16:07:47 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+jun 15 16:07:47 symfony [info] {sfWebDebugLogger} Configuration 1289.48 ms (13)
+jun 15 16:07:47 symfony [info] {sfWebDebugLogger} Factories 307.32 ms (1)
+jun 15 16:07:47 symfony [info] {sfWebDebugLogger} Action "comoseentero/index" 1830.66 ms (1)
+jun 15 16:07:47 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.02 ms (2)
+jun 15 16:07:47 symfony [info] {sfWebDebugLogger} View "Success" for "comoseentero/index" 248.40 ms (1)
+jun 15 16:07:47 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_assets" 2.02 ms (1)
+jun 15 16:07:47 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_flashes" 1.35 ms (1)
+jun 15 16:07:47 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_list_header" 0.99 ms (1)
+jun 15 16:07:47 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_filters" 90.70 ms (1)
+jun 15 16:07:47 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_filters_field" 70.44 ms (2)
+jun 15 16:07:47 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_list" 14.20 ms (1)
+jun 15 16:07:47 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_list_batch_actions" 2.27 ms (1)
+jun 15 16:07:47 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_list_actions" 1.95 ms (1)
+jun 15 16:07:47 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_list_footer" 1.49 ms (1)
+jun 15 16:07:47 symfony [info] {sfWebResponse} Send content (62329 o)
+jun 15 16:08:06 symfony [info] {sfPatternRouting} Match route "comoseentero" (/comoseentero.:sf_format) for /comoseentero with parameters array (  'module' => 'comoseentero',  'action' => 'index',  'sf_format' => 'html',)
+jun 15 16:08:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jun 15 16:08:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+jun 15 16:08:06 symfony [info] {comoseenteroActions} Call "comoseenteroActions->executeIndex()"
+jun 15 16:08:06 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+jun 15 16:08:06 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM comoseentero c - ()
+jun 15 16:08:06 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/indexSuccess.php"
+jun 15 16:08:06 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_assets.php"
+jun 15 16:08:06 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_flashes.php"
+jun 15 16:08:06 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_list_header.php"
+jun 15 16:08:06 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_filters.php"
+jun 15 16:08:06 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_filters_field.php"
+jun 15 16:08:06 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_filters_field.php"
+jun 15 16:08:06 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_list.php"
+jun 15 16:08:06 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_list_batch_actions.php"
+jun 15 16:08:06 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_list_actions.php"
+jun 15 16:08:06 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_list_footer.php"
+jun 15 16:08:06 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\fit2go\apps\backend\templates/layout.php"
+jun 15 16:08:06 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\fit2go\apps\backend\templates/layout.php"
+jun 15 16:08:06 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+jun 15 16:08:06 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+jun 15 16:08:06 symfony [info] {sfWebDebugLogger} Configuration 244.29 ms (13)
+jun 15 16:08:06 symfony [info] {sfWebDebugLogger} Factories 120.83 ms (1)
+jun 15 16:08:06 symfony [info] {sfWebDebugLogger} Action "comoseentero/index" 308.91 ms (1)
+jun 15 16:08:06 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.01 ms (2)
+jun 15 16:08:06 symfony [info] {sfWebDebugLogger} View "Success" for "comoseentero/index" 77.27 ms (1)
+jun 15 16:08:06 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_assets" 1.34 ms (1)
+jun 15 16:08:06 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_flashes" 1.32 ms (1)
+jun 15 16:08:06 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_list_header" 0.91 ms (1)
+jun 15 16:08:06 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_filters" 38.84 ms (1)
+jun 15 16:08:06 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_filters_field" 31.69 ms (2)
+jun 15 16:08:06 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_list" 1.74 ms (1)
+jun 15 16:08:06 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_list_batch_actions" 2.17 ms (1)
+jun 15 16:08:06 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_list_actions" 1.83 ms (1)
+jun 15 16:08:06 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_list_footer" 1.13 ms (1)
+jun 15 16:08:06 symfony [info] {sfWebResponse} Send content (62325 o)
+jun 15 16:08:09 symfony [info] {sfPatternRouting} Match route "comoseentero" (/comoseentero.:sf_format) for /comoseentero with parameters array (  'module' => 'comoseentero',  'action' => 'index',  'sf_format' => 'html',)
+jun 15 16:08:09 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jun 15 16:08:09 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+jun 15 16:08:09 symfony [info] {comoseenteroActions} Call "comoseenteroActions->executeIndex()"
+jun 15 16:08:10 symfony [info] {Doctrine_Connection_Mysql} exec : SET NAMES 'UTF8' - ()
+jun 15 16:08:10 symfony [info] {Doctrine_Connection_Mysql} query : SELECT COUNT(*) AS num_results FROM comoseentero c - ()
+jun 15 16:08:10 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/indexSuccess.php"
+jun 15 16:08:10 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_assets.php"
+jun 15 16:08:10 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_flashes.php"
+jun 15 16:08:10 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_list_header.php"
+jun 15 16:08:10 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_filters.php"
+jun 15 16:08:10 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_filters_field.php"
+jun 15 16:08:10 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_filters_field.php"
+jun 15 16:08:10 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_list.php"
+jun 15 16:08:10 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_list_batch_actions.php"
+jun 15 16:08:10 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_list_actions.php"
+jun 15 16:08:10 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_list_footer.php"
+jun 15 16:08:10 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\fit2go\apps\backend\templates/layout.php"
+jun 15 16:08:10 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\fit2go\apps\backend\templates/layout.php"
+jun 15 16:08:10 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+jun 15 16:08:10 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+jun 15 16:08:10 symfony [info] {sfWebDebugLogger} Configuration 245.46 ms (13)
+jun 15 16:08:10 symfony [info] {sfWebDebugLogger} Factories 65.12 ms (1)
+jun 15 16:08:10 symfony [info] {sfWebDebugLogger} Action "comoseentero/index" 394.61 ms (1)
+jun 15 16:08:10 symfony [info] {sfWebDebugLogger} Database (Doctrine) 0.03 ms (2)
+jun 15 16:08:10 symfony [info] {sfWebDebugLogger} View "Success" for "comoseentero/index" 89.58 ms (1)
+jun 15 16:08:10 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_assets" 1.70 ms (1)
+jun 15 16:08:10 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_flashes" 1.66 ms (1)
+jun 15 16:08:10 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_list_header" 1.19 ms (1)
+jun 15 16:08:10 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_filters" 41.47 ms (1)
+jun 15 16:08:10 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_filters_field" 32.83 ms (2)
+jun 15 16:08:10 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_list" 2.04 ms (1)
+jun 15 16:08:10 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_list_batch_actions" 2.55 ms (1)
+jun 15 16:08:10 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_list_actions" 2.24 ms (1)
+jun 15 16:08:10 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_list_footer" 1.42 ms (1)
+jun 15 16:08:10 symfony [info] {sfWebResponse} Send content (62323 o)
+jun 15 16:08:30 symfony [info] {sfPatternRouting} Match route "comoseentero_new" (/comoseentero/new.:sf_format) for /comoseentero/new with parameters array (  'module' => 'comoseentero',  'action' => 'new',  'sf_format' => 'html',)
+jun 15 16:08:30 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jun 15 16:08:30 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+jun 15 16:08:30 symfony [info] {comoseenteroActions} Call "comoseenteroActions->executeNew()"
+jun 15 16:08:31 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/newSuccess.php"
+jun 15 16:08:31 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_assets.php"
+jun 15 16:08:31 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_flashes.php"
+jun 15 16:08:31 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_form_header.php"
+jun 15 16:08:31 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_form.php"
+jun 15 16:08:31 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_form_fieldset.php"
+jun 15 16:08:31 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_form_field.php"
+jun 15 16:08:31 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_form_field.php"
+jun 15 16:08:31 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_form_actions.php"
+jun 15 16:08:31 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_form_footer.php"
+jun 15 16:08:31 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\fit2go\apps\backend\templates/layout.php"
+jun 15 16:08:31 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\fit2go\apps\backend\templates/layout.php"
+jun 15 16:08:31 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+jun 15 16:08:31 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+jun 15 16:08:31 symfony [info] {sfWebDebugLogger} Configuration 206.58 ms (13)
+jun 15 16:08:31 symfony [info] {sfWebDebugLogger} Factories 49.49 ms (1)
+jun 15 16:08:31 symfony [info] {sfWebDebugLogger} Action "comoseentero/new" 306.84 ms (1)
+jun 15 16:08:31 symfony [info] {sfWebDebugLogger} View "Success" for "comoseentero/new" 154.55 ms (1)
+jun 15 16:08:31 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_assets" 1.26 ms (1)
+jun 15 16:08:31 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_flashes" 1.32 ms (1)
+jun 15 16:08:31 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_form_header" 1.27 ms (1)
+jun 15 16:08:31 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_form" 110.06 ms (1)
+jun 15 16:08:31 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_form_fieldset" 88.42 ms (1)
+jun 15 16:08:31 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_form_field" 62.13 ms (2)
+jun 15 16:08:31 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_form_actions" 7.59 ms (1)
+jun 15 16:08:31 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_form_footer" 1.39 ms (1)
+jun 15 16:08:31 symfony [info] {sfWebResponse} Send content (65041 o)
+jun 15 16:09:51 symfony [info] {sfPatternRouting} Match route "comoseentero_new" (/comoseentero/new.:sf_format) for /comoseentero/new with parameters array (  'module' => 'comoseentero',  'action' => 'new',  'sf_format' => 'html',)
+jun 15 16:09:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+jun 15 16:09:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+jun 15 16:09:51 symfony [info] {comoseenteroActions} Call "comoseenteroActions->executeNew()"
+jun 15 16:09:51 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/newSuccess.php"
+jun 15 16:09:51 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_assets.php"
+jun 15 16:09:51 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_flashes.php"
+jun 15 16:09:51 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_form_header.php"
+jun 15 16:09:51 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_form.php"
+jun 15 16:09:51 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_form_fieldset.php"
+jun 15 16:09:51 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_form_field.php"
+jun 15 16:09:51 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_form_field.php"
+jun 15 16:09:51 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_form_actions.php"
+jun 15 16:09:51 symfony [info] {sfPartialView} Render "C:\xampp\htdocs\fit2go\cache\backend\dev\modules/autoComoseentero/templates/_form_footer.php"
+jun 15 16:09:51 symfony [info] {sfPHPView} Decorate content with "C:\xampp\htdocs\fit2go\apps\backend\templates/layout.php"
+jun 15 16:09:51 symfony [info] {sfPHPView} Render "C:\xampp\htdocs\fit2go\apps\backend\templates/layout.php"
+jun 15 16:09:51 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+jun 15 16:09:51 symfony [info] {sfWebResponse} Send header "Content-Type: text/html; charset=utf-8"
+jun 15 16:09:51 symfony [info] {sfWebDebugLogger} Configuration 821.64 ms (12)
+jun 15 16:09:51 symfony [info] {sfWebDebugLogger} Factories 168.64 ms (1)
+jun 15 16:09:51 symfony [info] {sfWebDebugLogger} Action "comoseentero/new" 17.12 ms (1)
+jun 15 16:09:51 symfony [info] {sfWebDebugLogger} View "Success" for "comoseentero/new" 89.74 ms (1)
+jun 15 16:09:51 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_assets" 1.70 ms (1)
+jun 15 16:09:51 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_flashes" 1.53 ms (1)
+jun 15 16:09:51 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_form_header" 1.24 ms (1)
+jun 15 16:09:51 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_form" 49.01 ms (1)
+jun 15 16:09:51 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_form_fieldset" 41.11 ms (1)
+jun 15 16:09:51 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_form_field" 37.42 ms (2)
+jun 15 16:09:51 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_form_actions" 1.83 ms (1)
+jun 15 16:09:51 symfony [info] {sfWebDebugLogger} Partial "comoseentero/_form_footer" 1.18 ms (1)
+jun 15 16:09:51 symfony [info] {sfWebResponse} Send content (64956 o)

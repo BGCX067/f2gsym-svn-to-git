@@ -1,0 +1,16 @@
+## YAML Template.
+---
+Usuario:
+  1:
+    tipo: 1
+    nombre: Roberto
+    apellido: Hernandez
+    email: rhernandez@netosfera.com
+    clave: 1234567
+    birthday: 1987-07-07
+    telefono1: 4120937012
+    sexo: 1
+    cupon: Fit2Go
+    comoseentero_id: 1
+    activo: 1
+    recurrente: 0

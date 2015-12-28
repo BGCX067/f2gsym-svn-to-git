@@ -1,0 +1,19 @@
+## YAML Template.
+---
+Tipoingredientetranslation:
+  Meat:
+    id: 1
+    name: Meat
+    lang: en
+  Carne:
+    id: 1
+    name: Carne
+    lang: es
+  Spices:
+    id: 2
+    name: Spices
+    lang: en
+  Condimentos:
+    id: 2
+    name: Condimentos
+    lang: es

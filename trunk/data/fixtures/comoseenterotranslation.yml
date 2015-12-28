@@ -1,0 +1,19 @@
+## YAML Template.
+---
+Comoseenterotranslation:
+  friend:
+    id: 1
+    name: A friend
+    lang: en
+  Amigo:
+    id: 1
+    name: Un amigo
+    lang: es
+  Family:
+    id: 2
+    name: Family
+    lang: en
+  Familia:
+    id: 2
+    name: Un familiar
+    lang: es

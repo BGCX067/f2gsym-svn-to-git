@@ -1,0 +1,229 @@
+Usuario:
+  actAs: { Timestampable: ~ }
+  columns:
+    tipo: { type: integer, notnull: true, default: 0 }
+    nombre:  { type: string(120), notnull: true }
+    apellido: { type: string(120), notnull: true }
+    email:  { type: string(60), notnull: true, unique: true }   
+    clave: { type: string(60), notnull: true }
+    birthday: { type: date, notnull: true }
+    telefono1: { type: integer(10), notnull: true }    
+    telefono2: { type: integer(10), notnull: false, default: null }
+    sexo: { type: boolean, notnull: true }
+    cupon: { type: string(30), notnull: false, default: null }
+    comoseentero_id: { type: integer, notnull: true }
+    activo: { type: boolean, notnull: true, default: true }
+    recurrente: { type:  boolean, notnull: true, default: false }
+    nota_usuario: { type: string(500), notnull: true }
+    nota_administrador: { type: string(500), notnull: true }
+  relations:
+    Creditcard: { alias: creditcard, local: id, foreign: usuario_id, foreignAlias: Usuario, type: one, foreignType: one }
+    Testimonio: { alias: testimonio, local: id, foreign: usuario_id, foreignAlias: Usuario, type: one, foreignType: one }
+    Orden: { alias: ordenes, local: id, foreign: usuario_id, foreignAlias: Usuario, type: many, foreignType: one }
+    Tipoingrediente: { class: Tipoingrediente, refClass: PreferenciasTipoingrediente, local: usuario_id, foreign: tipoingrediente_id } 
+   #Ingrediente: { class: Ingrediente, refClass: Preferenciasingredientes, local: usuario_id, foreign: ingrediente_id }
+#hay 3 notas, una en el perfil del usuario que solo el admin puede poner, la segunda es una nota que el usuario pone, y la tercera es una nota que debe ir en cada pedido
+
+Direccion:
+  actAs: { Timestampable: ~ }
+  columns:
+    usuario_id: { type: integer, notnull: true }
+    alias: { type: string(80), notnull: true }
+    direccion: { type: string(200), notnull: true }
+    ciudad: { type: string(100), notnull: true }
+    estado: { type: string(20), notnull: true }
+    zip: { type: integer, notnull: true }
+    lon: { type: double, notnull: true, default: 0 }
+    lat: { type: double, notnull: true, default: 0 }
+    facturacion: { type: boolean, notnull: true, default: false }
+    ruta: { type: integer, notnull: false }
+  relations:
+    Usuario: { alias: usuario, local: usuario_id, foreign: id, foreignAlias: Direccion, onDelete: cascade, type: one, foreignType: many }
+    
+Creditcard:
+  actAs: { Timestampable: ~ }
+  columns:
+    usuario_id: { type: integer, notnull: true }
+    numero: { type: integer, notnull: true }
+    nombre: { type: string(80), notnull: true }
+    codigo: { type: integer, notnull: true }
+    fechavencimiento: { type: string(7), notnull: true }
+    tipo: { type: integer, notnull: true }
+    
+Semana:
+  actAs: { Timestampable: ~ }
+  columns:
+    fecha_inicio: { type: date, notnull: true }
+  relations:
+    Menu: { class: Menu, refClass: Itemsemana, local: semana_id, foreign: menu_id }
+    
+#El campo dia de la tabla Itemsemana se refiere a: lunes, Martes, miercoles, jueves, viernes, sabado...    
+Itemsemana:
+  actAs: { Timestampable: ~ }
+  columns:
+    menu_id: { type: integer, notnull: true }
+    semana_id: { type: integer, notnull: true }
+    dia: { type: integer, notnull: true }    
+  relations:
+    Semana: { local: semana_id, foreign: id, foreignType: many, foreignAlias: Itemsemana, onDelete: CASCADE }
+    Menu: { local: menu_id, foreign: id, foreignType: many, foreignAlias: Itemsemana }
+
+#El campo tipo de la tabla menu se refiere a: 	Lunch extrameal Salad Wrap 
+Menu:
+  actAs: { Timestampable: ~ }
+  columns:
+    precio: { type: double, notnull: true }
+    categoria_id: { type: integer, notnull: true }
+  relations:
+    Plato: { class: Plato, refClass: ItemsMenu, local: menu_id, foreign: plato_id }
+
+Itemsmenu:
+  actAs: { Timestampable: ~ }
+  columns:
+    menu_id: { type: integer, notnull: true }
+    plato_id: { type: integer, notnull: true }
+  relations:
+    Menu: { local: menu_id, foreign: id, foreignType: many, foreignAlias: Itemsmenu, onDelete: CASCADE }
+    Plato: { local: plato_id, foreign: id, foreignType: many, foreignAlias: itemsmenu}
+        
+Plato:
+  actAs: 
+    Timestampable: ~
+    I18n: 
+      fields: [name, description]
+  columns:
+    name: { type: string(70), notnull: true }
+    description: { type: string(200), notnull: true }
+    disponible: { type: boolean, notnull: true, default: true }
+    precio: { type: double, notnull: true }
+    imagen: { type: string(100), notnull: false }
+    calorias: { type: float, notnull: true, default: 0}
+    proteinas: { type: float, notnull: true, default: 0 }
+    grasas: { type: float, notnull: true, default: 0 }
+    carbohidratos: { type: float, notnull: true, default: 0}
+    colesterol: { type: float, notnull: true, default: 0 }
+    sodio: { type: float, notnull: true, default: 0 }
+    weightwatcher: { type: integer, notnull: true, default: 0 }
+    categoria_id: { type: integer, notnull: true }
+  relations:
+    Ingrediente: { class: Ingrediente, refClass: Ingredientes, local: plato_id, foreign: ingrediente_id }
+
+#falta agregar posiblemente gramos o alguna otra medida.
+Ingrediente:
+  actAs:
+    Timestampable: ~
+    I18n:
+      fields: [name]
+  columns:
+    name: { type: string(70), notnull: true }
+    tipoingrediente_id: { type: integer, notnull: true }
+    
+Ingredientes:
+  actAs: { Timestampable: ~ }
+  columns:
+    plato_id: { type: integer, notnull: true }
+    ingrediente_id: { type: integer, notnull: true }
+    grms: { type: double, notnull: false }
+  relations:
+    Plato: { local: plato_id, foreign: id, foreignType: many, foreignAlias: Ingredientes, onDelete: CASCADE }
+    Ingrediente: { local: ingrediente_id, foreign: id, foreignType: many, foreignAlias: Ingredientes }
+    
+#Preferenciasingredientes:
+#  actAs: { Timestampable: ~ }
+#  columns:
+#    usuario_id: { type: integer, notnull: true }
+#    ingrediente_id: { type: integer, notnull: true }
+#  relations:
+#    Usuario: { local: usuario_id, foreign: id, foreignType: many, foreignAlias: preferenciasingre, onDelete: CASCADE }
+#    Ingrediente: { local: ingrediente_id, foreign: id, foreignType: many, foreignAlias: preferenciasingre }
+
+Preferenciastipoingrediente:
+  actAs: { Timestampable: ~ }
+  columns:
+    usuario_id: { type: integer, notnull: true }
+    tipoingrediente_id: { type: integer, notnull: true }
+  relations:
+    Usuario: { local: usuario_id, foreign: id, foreignType: many, foreignAlias: preferenciastipoingre, onDelete: CASCADE }
+    Tipoingrediente: { local: tipoingrediente_id, foreign: id, foreignType: many, foreignAlias: preferenciastipoingre }
+    
+Testimonio:
+  actAs: { Timestampable: ~ }
+  columns:
+    usuario_id: { type: integer, notnull: true }
+    mensaje: { type: string(500), notnull: true }
+
+#tipo de ingrediente o categoria de ingrediente, es decir cada ingrediente deberia quedar dentro del grupo Meats:Sort:Spices:
+
+Tipoingrediente:
+  actAs:
+    Timestampable: ~
+    I18n:
+      fields: [name]
+  columns:
+    name: { type: string(100), notnull: true }
+  relations:
+    Ingrediente: { alias: ingrediente, foreignAlias: tipoingrediente, local: id, foreign: tipoingrediente_id, type: many, foreignType: one }
+      
+
+#categoria es por ejemplo: appetizer/entrada, main,principal, slide/ contorno, dessert / postre. Revisar la posiblidad de eliminar el I18n    
+Categoria:
+  actAs:
+    Timestampable: ~
+    I18n:
+      fields: [name]
+  columns:
+    name: { type: string(100), notnull: true }
+  relations:
+    Plato: { alias: plato, local: id, foreign: categoria_id, foreignAlias: categoria, type: many, foreignType: one }
+    Menu: { alias: menu, local: id, foreign: categoria_id, foreignAlias: categoria, type: many, foreignType: one }
+    
+#Falta agregar tablas de  recurrings, y determinar si el carrito de compra se hara en bd o en sesiones
+
+Cupon:
+  actAs: { Timestampable: ~ }
+  columns:
+    name: { type: string(50), notnull: true }
+    descuento: { type: double, notnull: true }
+    
+Comoseentero:
+  actAs:
+    Timestampable: ~
+    I18n:
+      fields: [name]
+  columns:
+    name: { type: string(80), notnull: true }
+  relations:
+    Usuario: { alias: comoseentero, local: id, foreign: comoseentero_id, foreignAlias: comoseentero, type: many, foreignType: one }
+
+#Ordenes, la orden debe contener solo el total de la compra, y a su vez contener "detalles", es decir los items de la orden
+Orden:
+  actAs: { Timestampable: ~ }
+  columns:
+    usuario_id: { type: integer, notnull: true }
+    placedby_id: { type: integer, notnull: true }
+    direccion_id: { type: integer, notnull: true }
+    monto: { type: double, notnull: true }
+    status: { type: string(20), notnull: true }
+    autorizacion: { type: string(25), notnull: true, default: pendiente }
+    referencia: { type: string(30), notnull: true, default: pendiente }
+    avsresultado: { type: string(20), notnull: false }
+    cvv2: { type: string(20), notnull: false }
+    mensajeerror: { type: string(30), notnull: false }
+    cupon_id: { type: integer, notnull: false }
+    manual: { type: boolean, default: false }
+    pago: { type: boolean, default: false }
+  relations:
+    Direccion: { alias: direccion, local: direccion_id, foreign: id, foreignAlias: orden, type: one, foreignType: one }
+    Itemsorden: { alias: itemorden, local: id, foreign: orden_id, foreignAlias: orden, type: many, foreignType: one }
+    Cupon: { alias: cupon, local: cupon_id, foreign: id, foreignAlias: orden, type: one, foreignType: one }
+    
+Itemsorden:
+  actAs: { Timestampable: ~ }
+  columns:
+    orden_id: { type: integer, notnull: true }
+    menu_id: { type: integer, notnull: false }
+    plato_id: { type: integer, notnull: false }
+    cantidad: { type: integer, notnull: true, default: 1 }
+  relations:
+    Menu: { alias: menu, local: menu_id, foreign: id, foreignAlias: itemsorden, type: one, foreignType: one }
+    Plato: { alias: plato, local: plato_id, foreign: id, foreignAlias: itemsorden, type: one,foreignType: one }

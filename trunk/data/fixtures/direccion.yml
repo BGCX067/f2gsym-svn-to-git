@@ -1,0 +1,12 @@
+## YAML Template.
+---
+Direccion:
+  1:
+    usuario_id: 1
+    alias: Principal
+    direccion: Prados del Este, calle la iglesia
+    ciudad: Miami
+    estado: FL
+    zip: 14475
+    facturacion: 1
+  

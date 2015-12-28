@@ -1,0 +1,37 @@
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+localized_homepage:
+  url:   /:sf_culture/
+  param: { module: home, action: index }
+  requirements:
+    sf_culture: (?:en|es)
+
+# default rules
+homepage:
+  url:   /
+  param: { module: home, action: index }
+  
+# Registro de usuarios
+register:
+  url: /:sf_culture/register
+  param: { module: user, action: new }
+  
+# Panel de Control
+controlpanel:
+  url: /:sf_culture/controlpanel
+  param: { module: user, action: controlpanel }
+  
+#pagina para empezar a ordenar
+order:
+  url: /:sf_culture/order
+  param: { module: order, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:sf_culture/:module
+  param: { action: index }
+
+default:
+  url:   /:sf_culture/:module/:action/*

@@ -1,0 +1,23 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           Plato
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          plato
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+      list:
+        display: [ description, disponible, categoria, imagen, precio ]
+      filter:
+        display: [ disponible, precio, categoria_id, created_at, ingrediente_list ]        
+      form:    ~
+      edit:    ~
+      new:     ~

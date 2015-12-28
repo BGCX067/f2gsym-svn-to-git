@@ -1,0 +1,19 @@
+## YAML Template.
+---
+Ingredientetranslation:
+  Pork:
+    id: 1
+    name: Pork
+    lang: en
+  Cerdo:
+    id: 1
+    name: Cerdo
+    lang: es
+  Turky:
+    id: 2
+    name: Turky
+    lang: en
+  Pavo:
+    id: 2
+    name: Pavo
+    lang: es

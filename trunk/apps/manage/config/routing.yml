@@ -1,0 +1,70 @@
+menu:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Menu
+    module:               menu
+    prefix_path:          /menu
+    column:               id
+    with_wildcard_routes: true
+
+plato:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Plato
+    module:               dish
+    prefix_path:          /dish
+    column:               id
+    with_wildcard_routes: true
+
+categoria:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Categoria
+    module:               categoria
+    prefix_path:          /categoria
+    column:               id
+    with_wildcard_routes: true
+
+tipoingrediente:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Tipoingrediente
+    module:               tipoingrediente
+    prefix_path:          /tipoingrediente
+    column:               id
+    with_wildcard_routes: true
+
+ingrediente:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Ingrediente
+    module:               ingrediente
+    prefix_path:          /ingrediente
+    column:               id
+    with_wildcard_routes: true
+
+comoseentero:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                Comoseentero
+    module:               comoseentero
+    prefix_path:          /comoseentero
+    column:               id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: panelinicial, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*

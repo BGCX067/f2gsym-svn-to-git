@@ -1,0 +1,27 @@
+## YAML Template.
+---
+Categoriatranslation:
+  main:
+    id: 1
+    name: Main
+    lang: en
+  Principal:
+    id: 1
+    name: Principal
+    lang: es
+  Dessert:
+    id: 2
+    name: Dessert
+    lang: en
+  Postre:
+    id: 2
+    name: Postre
+    lang: es
+  Beverage:
+    id: 3
+    name: Beverage
+    lang: en
+  Bebida:
+    id: 3
+    name: Bebida
+    lang: es
